@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <img src="images/pixabella_Two_Pink_Hearts_Together.svg" alt="Heart Image" width="100" height="100" />
+    <title>My Personal Website</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css"/>
+
+    <style>
+      /* General Spacing Improvements */
+      body {
+        background-color: #1a1a1a; /* Dark gray */
+        color: #e0e0e0; /* Light gray text */
+        line-height: 1.6; /* Improve readability */
+      }
+
+      /* Table Styling */
+      table, td, th {
+        border: 1px solid #49c5b6; /* Soft teal border */
+        border-spacing: 0;
+      }
+
+      table {
+        width: 75%;
+        margin: 2rem auto; /* Added space above and below the table */
+        background-color: #1a1a1a; /* Dark gray */
+        color: #e0e0e0; /* Light gray text */
+      }
+
+      td, th {
+        padding: 15px; /* Increased padding for better spacing */
+      }
+
+      th, caption {
+        font-family: Georgia, serif;
+        color: #49c5b6; /* Soft teal for headings */
+      }
+
+      td {
+        font-family: Tahoma, sans-serif;
+      }
+
+      /* Card Styling */
+      .card {
+        background-color: #1a1a1a; /* Dark gray */
+        border: none; /* Removed borders */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+        margin-bottom: 1.5rem; /* Added space between cards */
+      }
+
+      .card-title {
+        color: #49c5b6; /* Soft teal for card titles */
+        margin-bottom: 1rem; /* Added space below card titles */
+      }
+
+      .card-footer {
+        background-color: #333333; /* Darker gray */
+        border-top: 1px solid #49c5b6; /* Soft teal border */
+      }
+
+      .card-footer small {
+        color: #ffffff; /* White text for "Hobby 1", "Hobby 2", "Hobby 3" */
+      }
+
+      /* Navbar Styling */
+      .navbar {
+        background-color: #1a1a1a; /* Dark gray */
+        border-bottom: 2px solid #49c5b6; /* Soft teal border */
+      }
+
+      .navbar-nav a {
+        color: #49c5b6; /* Soft teal for links */
+      }
+
+      .navbar-nav a:hover {
+        background-color: #49c5b6; /* Soft teal background on hover */
+        color: #ffffff; /* White text */
+      }
+
+      .navbar-nav .active {
+        background-color: #49c5b6; /* Soft teal for active link */
+        color: #ffffff; /* White text */
+      }
+
+      /* Footer Styling */
+      footer {
+        background-color: #1a1a1a; /* Dark gray */
+        color: #ffffff; /* White text */
+        border-top: 2px solid #49c5b6; /* Soft teal border */
+        margin-top: 2rem; /* Added space above the footer */
+      }
+
+      /* Header and Main Content Spacing */
+      header {
+        margin-bottom: 2rem; /* Added space below the header */
+      }
+
+      main {
+        padding: 2rem 0; /* Added padding to main content */
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        table {
+          width: 100%; /* Full width on smaller screens */
+          margin: 1rem auto; /* Reduced space on smaller screens */
+        }
+
+        .card-group {
+          margin-bottom: 1rem; /* Reduced space on smaller screens */
+        }
+      }
+
+      /* Style for the placeholder text in the feedback textarea */
+      textarea::placeholder {
+        color: #e0e0e0; /* Light gray (white) placeholder text */
+        opacity: 1; /* Ensure full visibility */
+      }
+
+      /* Align the "Videos" title */
+      .pageTitle {
+        text-align: center;
+        color: #49c5b6; /* Soft teal for headings */
+        margin-bottom: 2rem; /* Added space below the title */
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="Cars.html">Cars</a>
+            <a class="nav-link" href="legos.html">Legos</a>
+            <a class="nav-link" href="music.html">Music</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="text-center py-5">
+      <h2>Hobbies</h2>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <section id="heroHome" class="container-fluid d-flex justify-content-center">
+        <div id="heroText" class="col-lg-6">
+          <h1 class="header-title">Jordi Rodriguez</h1>
+          <img src="images/sunset-time-tropical-beach-sea-with-coconut-palm-tree_74190-1075.JPG" width="800" height="200" class="center" alt="Tropical beach at sunset">
+        </div>
+      </section>
+
+      <!-- Card Group -->
+      <div class="card-group">
+        <div class="card">
+          <img src="images/IMG_3682.jpg" width="450" height="266" class="card-img-top" alt="Car">
+          <div class="card-body">
+            <h5 class="card-title">Cars</h5>
+            <p class="card-text">This is one of my cars, one of my hobbies is to work on cars.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary"></small>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/$_57.JPG" width="450" height="266" class="card-img-top" alt="Legos">
+          <div class="card-body">
+            <h5 class="card-title">Legos</h5>
+            <p class="card-text">I like to pass time building legos as a way to relax.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary"></small>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/party-istock-638651312-jpg--73087-.jpg" width="450" height="266" class="card-img-top" alt="House Music">
+          <div class="card-body">
+            <h5 class="card-title">House Music</h5>
+            <p class="card-text">One of the new music genres I have been getting into since last year is house music.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary"></small>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Me Table -->
+      <table>
+        <caption>About Me</caption>
+        <tr>
+          <th>Info</th>
+          <th>Related</th>
+        </tr>
+        <tr>
+          <td>National Louis University</td>
+          <td>Bachelor's Degree, Soon!</td>
+        </tr>
+        <tr>
+          <td>LinkedIn</td>
+          <td><a href="https://www.linkedin.com/in/jordi-rodriguez-80b582265" target="_blank">Network With Me</a></td>
+        </tr>
+        <tr>
+          <td>GitHub</td>
+          <td>Username: JR224-jpg</td>
+        </tr>
+        <tr>
+          <td>For You :)</td>
+          <td>“Love your family, work super hard, live your passion.” —Gary Vaynerchuk</td>
+        </tr>
+      </table>
+
+     <!-- Videos Section -->
+<h2 class="pageTitle">Video</h2>
+<div id="Youtube">
+  <table id="z">
+    <tr>
+      <td class="YouTubeVideo">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cv6ncEYLRlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </td>
+      <td class="YouTubeVideo">
+        <h3>EXTRA: I really love and enjoy watching Disney movies.</h3>
+      </td>
+    </tr>
+  </table>
+</div>
+    </main>
+
+    <!-- Rating Form -->
+    <h5 class="text-center" style="color: #49c5b6;">Does my website need more work?</h5>
+    <h1 class="text-center" style="color: #49c5b6;">Rate and Share Your Feedback!</h1>
+    <form id="rateForm" class="p-4" style="background-color: #343a40; border-radius: 10px; max-width: 600px; margin: 0 auto;">
+      <!-- Rating Input -->
+      <div class="mb-3">
+        <label for="score" class="form-label" style="color: #49c5b6;">Score from 1-10:</label>
+        <input type="number" id="score" name="score" class="form-control" style="background-color: #1a1a1a; color: #e0e0e0; border: 1px solid #49c5b6;" min="1" max="10" required>
+      </div>
+
+      <!-- Feedback Input -->
+      <div class="mb-3">
+        <label for="feedback" class="form-label" style="color: #49c5b6;">Your Feedback:</label>
+        <textarea id="feedback" name="feedback" class="form-control" style="background-color: #1a1a1a; color: #e0e0e0; border: 1px solid #49c5b6;" rows="4" placeholder="What did you like or dislike? How can I improve?" required></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="button" class="btn" style="background-color: #49c5b6; color: #ffffff;" onclick="submitFeedback();">Submit</button>
+    </form>
+
+    <!-- Feedback Display Area -->
+    <div id="feedbackDisplay" class="mt-4 p-4" style="background-color: #343a40; border-radius: 10px; max-width: 600px; margin: 0 auto; display: none;">
+      <h3 style="color: #49c5b6;">Thank You for Your Feedback!</h3>
+      <p style="color: #e0e0e0;"><strong>Your Rating:</strong> <span id="displayScore" style="color: #49c5b6;"></span></p>
+      <p style="color: #e0e0e0;"><strong>Your Feedback:</strong> <span id="displayFeedback" style="color: #49c5b6;"></span></p>
+    </div>
+
+    <script>
+      function submitFeedback() {
+        // Get the rating and feedback values
+        const score = document.getElementById('score').value;
+        const feedback = document.getElementById('feedback').value;
+
+        // Validate inputs
+        if (!score || !feedback) {
+          alert('Please provide both a rating and feedback.');
+          return;
+        }
+
+        // Display the feedback on the page
+        document.getElementById('displayScore').textContent = score;
+        document.getElementById('displayFeedback').textContent = feedback;
+        document.getElementById('feedbackDisplay').style.display = 'block';
+
+        // Optional: Send the feedback to a server or save it locally
+        console.log('Rating:', score);
+        console.log('Feedback:', feedback);
+
+        // Clear the form
+        document.getElementById('rateForm').reset();
+      }
+    </script>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <span>Copyright &copy; 2023. All Rights Reserved.</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
